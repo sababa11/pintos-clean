@@ -3,7 +3,7 @@
 #include <string.h>
 
 int main(int argc, char *argv[]){
-    int i, N=0, true=0;
+    int i, N=0;
     char word[3];
     char str[100];
     FILE *ifile;
@@ -20,6 +20,7 @@ int main(int argc, char *argv[]){
         
     } else {
         fgets(str, 100, stdin);
+        //scanf(" %[^\n]", &str);
         int i;
         int end;
         int start = 0;
